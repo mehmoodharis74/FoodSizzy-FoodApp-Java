@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.harismehmood.finalproject">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".activities.Messaging.FCM_Messaging"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalProject"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".addCategory_layout"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".admin_main_layout"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".search_layout"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.common.shopping_cart"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.common.res_detail"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.common.myProfile"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.common.mainDashBoard"
+            android:exported="true">
+
+            <!--
+                <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            -->
+        </activity>
+        <activity
+            android:name=".activities.forgotPassword.newPassword_activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.common.onboarding"
+            android:exported="true" />
+        <activity
+            android:name=".activities.forgotPassword.otp_verification_activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.forgotPassword.choose_forget_password_method_activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.forgotPassword.forgot_password_activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.common.login_activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.common.splash_screen"
+            android:exported="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.common.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.common.no_internet_activity"
+            android:exported="false" />
+
+        <service android:name=".activities.Services.PlaceOrderService" />
+    </application>
+
+</manifest>

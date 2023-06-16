@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/service_design_model"
+    android:id="@+id/serviceModelItemRow"
+    android:gravity="center_horizontal"
+    android:elevation="5dp"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/serviceModelImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/notification_bell"
+        app:riv_corner_radius="10dp"
+        />
+    <TextView
+        android:id="@+id/serviceModelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/serviceModelDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        />
+</LinearLayout>

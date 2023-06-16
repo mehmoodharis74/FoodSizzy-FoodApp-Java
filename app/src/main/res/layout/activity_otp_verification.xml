@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/otpVerificationMainLayout"
+    tools:context=".activities.forgotPassword.otp_verification_activity">
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/back_arrow" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/verifyOtpAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        app:lottie_rawRes="@raw/otp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:text="Code Verification"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/otpDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:text="@string/otp_description"
+        android:textColor="#878686"
+        android:textSize="16dp"/>
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textColor="@color/blue"
+        app:cursorColor="@color/blue"
+        android:itemBackground="@color/pinViewBackground"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="50dp"
+        app:itemRadius="5dp"
+        app:itemSpacing="5dp"
+        app:itemWidth="50dp"
+        app:lineColor="@color/blue"
+        style="@style/PinWidget.PinView"
+        app:lineWidth="1dp" />
+
+    <TextView
+        android:id="@+id/resendOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:text="Resend OTP"
+        android:textSize="16dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/otpWaitingProgressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/loading"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:visibility="gone"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify OTP"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/BtnVerifyOTP"
+            android:textColor="@color/white"
+
+            />
+    </FrameLayout>
+</LinearLayout>

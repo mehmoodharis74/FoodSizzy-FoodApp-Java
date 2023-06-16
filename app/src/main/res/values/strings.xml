@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">FoodSizzy</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="copyright">© 2022 Fastian. All rights reserved.</string>
+    <string name="retry_connection">Retry</string>
+    <string name="forgot_password_description">Enter your email address and we will send you a link to reset your password.</string>
+    <string name="choose_method">Choose Method</string>
+    <string name="choose_method_description">Select a method to reset your password.</string>
+    <string name="via_mail">Via Mail</string>
+    <string name="via_phone">Via Phone</string>
+    <string name="otp_description">Enter the 6 digit code sent to your</string>
+    <string name="back_arrow">back_arrow_button</string>
+    <string name="newPasswordDescription">Your identity is verified. Now, set a new password to continue.</string>
+    <string name="new_password">New Credentials</string>
+    <string name="update">Update</string>
+
+    <!--    Titles-->
+    <string name="onBoardingTitle1">Welcome to FoodSizzy</string>
+    <string name="onBoardingTitle2">Order Food you Love</string>
+    <string name="onBoardingTitle3">Get At your DoorStep</string>
+
+    <!--    Descriptions-->
+    <string name="onBoardingDesc1">FoodSizzy is a food delivery app that allows you to order your favourite meals.</string>
+    <string name="onBoardingDesc2">You can order your meals on single click.</string>
+    <string name="onBoardingDesc3">Get your meal at your doorstep without any hassle.</string>
+
+    <!--    Buttons-->
+    <string name="onBoardingButtonSkip">skip</string>
+    <string name="onBoardingButtonNext">Next</string>
+    <string name="onBoardingButtonStarted">Get Started</string>
+    <string name="username">Username</string>
+    <string name="password_confirm">Confirm Password</string>
+    <string name="signup">Sign up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
