@@ -31,7 +31,7 @@ Configure the database connection in the application.properties file.
 
 Build and run the project.
 
-##Usage
+## Usage
 Launch the application.
 
 Register as a new user or log in if you already have an account.
@@ -44,7 +44,7 @@ Track the status of your order in real-time.
 
 Once delivered, provide feedback and ratings for the ordered items.
 
-##Contributing
+## Contributing
 Contributions are welcome! Here's how you can contribute to the FoodSizzy-FoodApp-Java project:
 
 Fork the repository.
@@ -57,13 +57,13 @@ Push your changes to your fork.
 
 Submit a pull request to the main repository.
 
-##License
+## License
 FoodSizzy-FoodApp-Java is released under the MIT License.
 
-##Contact
+## Contact
 If you have any questions, suggestions, or concerns, please feel free to contact the project maintainers:
 
 Project Owner: mehmoodharis74
 Email: mehmoodharis@example.com
 
-##Images
+## Images
